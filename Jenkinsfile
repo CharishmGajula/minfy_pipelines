@@ -32,5 +32,13 @@ pipeline {
                     sh 'docker push ${IMAGE_NAME}'
                 }
             }
+        }
+    
+    }
+    post{
+        always
+        {
+            sh 'docker logout'
+        }
     }
 }
