@@ -2,7 +2,7 @@ pipeline {
     agent any
 
         environment {
-        DOCKERHUB_CREDENTIALS = 'dockerhub-credentials'  // Your Jenkins credential ID
+        DOCKERHUB_CREDENTIALS = 'dockerhub-credentials' 
         IMAGE_NAME = 'charishmagajula/minfy-python-demo-main'
     }
 
